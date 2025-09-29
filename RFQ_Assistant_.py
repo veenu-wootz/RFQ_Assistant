@@ -30,7 +30,7 @@ def handle_table_edit():
 
 # --- Setup ---
 # Set your API key
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY  # Replace with your actual key
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]  # Replace with your actual key
 client = OpenAI()
 
 # --- App UI ---
